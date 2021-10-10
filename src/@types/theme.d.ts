@@ -1,7 +1,7 @@
 interface ITheme {
   color: {
-    white: string;
-    black: string;
+    text: string;
+    background: string;
   };
   fonts: {
     normal: string;

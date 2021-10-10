@@ -1,9 +1,21 @@
-export default {
+const LightTheme: ITheme = {
   color: {
-    white: '#FFFFFF',
-    black: '#000000',
+    text: '#000000',
+    background: '#FFFFFF',
   },
   fonts: {
     normal: '14px',
   },
 };
+
+const DarkTheme: ITheme = {
+  color: {
+    text: '#FFFFFF',
+    background: '#000000',
+  },
+  fonts: {
+    normal: '14px',
+  },
+};
+
+export {LightTheme, DarkTheme};

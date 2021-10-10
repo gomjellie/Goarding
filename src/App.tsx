@@ -1,6 +1,7 @@
 import React, {FC} from 'react';
+import {useColorScheme} from 'react-native';
 import styled, {ThemeProvider} from 'styled-components/native';
-import Theme from './Theme';
+import {DarkTheme, LightTheme} from './Theme';
 
 interface IContainerProps {
   theme?: ITheme;
@@ -11,7 +12,7 @@ const Container = styled.View`
   justify-content: center;
   align-items: center;
   background-color: ${(props: IContainerProps) =>
-    props.theme && props.theme.color.black};
+    props.theme && props.theme.color.background};
 `;
 
 const MainText = styled.Text`
@@ -22,8 +23,11 @@ const MainText = styled.Text`
 `;
 
 const App: FC = () => {
+  const isDarkMode = useColorScheme() === 'dark';
+  const theme = isDarkMode ? DarkTheme : LightTheme;
+
   return (
-    <ThemeProvider theme={Theme}>
+    <ThemeProvider theme={theme}>
       <Container>
         <MainText>Hello World</MainText>
       </Container>
