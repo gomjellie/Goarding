@@ -1,18 +1,9 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * Generated with the TypeScript template
- * https://github.com/react-native-community/react-native-template-typescript
- *
- * @format
- */
-
 import React, {FC} from 'react';
-import styled from 'styled-components/native';
+import styled, {ThemeProvider} from 'styled-components/native';
+import Theme from './Theme';
 
 interface IContainerProps {
-  background: string;
+  theme?: ITheme;
 }
 
 const Container = styled.View`
@@ -20,7 +11,7 @@ const Container = styled.View`
   justify-content: center;
   align-items: center;
   background-color: ${(props: IContainerProps) =>
-    props.background ? props.background : 'white'};
+    props.theme && props.theme.color.black};
 `;
 
 const MainText = styled.Text`
@@ -32,9 +23,11 @@ const MainText = styled.Text`
 
 const App: FC = () => {
   return (
-    <Container background="white">
-      <MainText>Hello World</MainText>
-    </Container>
+    <ThemeProvider theme={Theme}>
+      <Container>
+        <MainText>Hello World</MainText>
+      </Container>
+    </ThemeProvider>
   );
 };
 
