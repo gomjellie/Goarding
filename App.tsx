@@ -8,7 +8,7 @@
  * @format
  */
 
-import React from 'react';
+import React, {FC} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -20,14 +20,22 @@ import {
 } from 'react-native';
 
 import {
-  Colors,
   DebugInstructions,
   Header,
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-const Section: React.FC<{
+const Colors = {
+  white: '#FFF',
+  black: '#000',
+  light: '#FFF',
+  dark: '#000',
+  darker: '#111',
+  lighter: '#EEE',
+};
+
+const Section: FC<{
   title: string;
 }> = ({children, title}) => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -55,7 +63,7 @@ const Section: React.FC<{
   );
 };
 
-const App = () => {
+const App: FC = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
