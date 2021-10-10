@@ -11,14 +11,18 @@
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
   },
   "dependencies": {
+    "@react-navigation/native": "^6.0.5",
     "@types/styled-components": "^5.1.15",
     "@types/styled-components-react-native": "^5.1.1",
     "babel-plugin-styled-components": "^1.13.2",
     "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-is": "17.0.2",
     "react-native": "0.66.0",
     "styled-components": "^5.3.1"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.1.6",
     "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
     "@react-native-community/eslint-config": "^2.0.0",
