@@ -1,39 +1,28 @@
 import React, {FC} from 'react';
 import {useColorScheme} from 'react-native';
-import styled, {ThemeProvider} from 'styled-components/native';
+import {ThemeProvider} from 'styled-components/native';
 import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {DarkTheme, LightTheme} from './Theme';
+import {RootStackParamList} from './@types/Root';
+import Hello from './components/Hello';
+import Home from './components/Home';
 
-interface IContainerProps {
-  theme: ITheme;
-}
-
-const Container = styled.View<IContainerProps>`
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  background-color: ${props => props.theme.color.background};
-`;
-
-const MainText = styled.Text<{theme: ITheme}>`
-  font-size: 20px;
-  text-align: center;
-  margin: 10px;
-  color: ${props => props.theme.color.text};
-`;
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const App: FC = () => {
   const isDarkMode = useColorScheme() === 'dark';
   const theme = isDarkMode ? DarkTheme : LightTheme;
 
   return (
-    <NavigationContainer>
-      <ThemeProvider theme={theme}>
-        <Container>
-          <MainText>Hello World</MainText>
-        </Container>
-      </ThemeProvider>
-    </NavigationContainer>
+    <ThemeProvider theme={theme}>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="Home">
+          <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="Hello" component={Hello} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </ThemeProvider>
   );
 };
 
