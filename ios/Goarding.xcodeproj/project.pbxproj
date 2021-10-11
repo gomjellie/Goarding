@@ -30,20 +30,20 @@
 		00E356EE1AD99517003FC87E /* GoardingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoardingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* GoardingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoardingTests.m; sourceTree = "<group>"; };
-		0DE91C4BE392969266B49D65 /* Pods-Goarding-GoardingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goarding-GoardingTests.debug.xcconfig"; path = "Target Support Files/Pods-Goarding-GoardingTests/Pods-Goarding-GoardingTests.debug.xcconfig"; sourceTree = "<group>"; };
-		12D69BCA1EB9535298FBAD65 /* Pods-Goarding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goarding.release.xcconfig"; path = "Target Support Files/Pods-Goarding/Pods-Goarding.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Goarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goarding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Goarding/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Goarding/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Goarding/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Goarding/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Goarding/main.m; sourceTree = "<group>"; };
+		150770157557E48F33525B1D /* Pods-Goarding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goarding.debug.xcconfig"; path = "Target Support Files/Pods-Goarding/Pods-Goarding.debug.xcconfig"; sourceTree = "<group>"; };
+		45DF5325C3D8BB92F52DDB4F /* Pods-Goarding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goarding.release.xcconfig"; path = "Target Support Files/Pods-Goarding/Pods-Goarding.release.xcconfig"; sourceTree = "<group>"; };
 		6423831EA8574132BED9D8CC /* libPods-Goarding.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Goarding.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Goarding/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A20A86C18FDF9209B5219B48 /* Pods-Goarding-GoardingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goarding-GoardingTests.debug.xcconfig"; path = "Target Support Files/Pods-Goarding-GoardingTests/Pods-Goarding-GoardingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ABFE59519B596E51CEFDCCC0 /* libPods-Goarding-GoardingTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Goarding-GoardingTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF82C49A25E9DF1608C6313E /* Pods-Goarding-GoardingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goarding-GoardingTests.release.xcconfig"; path = "Target Support Files/Pods-Goarding-GoardingTests/Pods-Goarding-GoardingTests.release.xcconfig"; sourceTree = "<group>"; };
+		DC3B36741EB50EA5379C0F35 /* Pods-Goarding-GoardingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goarding-GoardingTests.release.xcconfig"; path = "Target Support Files/Pods-Goarding-GoardingTests/Pods-Goarding-GoardingTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		FEA6EAD9A5CE309F8FAC120B /* Pods-Goarding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goarding.debug.xcconfig"; path = "Target Support Files/Pods-Goarding/Pods-Goarding.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +96,18 @@
 			name = Goarding;
 			sourceTree = "<group>";
 		};
+		2B8F84D1B589B19C2714924A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				150770157557E48F33525B1D /* Pods-Goarding.debug.xcconfig */,
+				45DF5325C3D8BB92F52DDB4F /* Pods-Goarding.release.xcconfig */,
+				A20A86C18FDF9209B5219B48 /* Pods-Goarding-GoardingTests.debug.xcconfig */,
+				DC3B36741EB50EA5379C0F35 /* Pods-Goarding-GoardingTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,7 +133,7 @@
 				00E356EF1AD99517003FC87E /* GoardingTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				BFB80954D8AF65CDE6D861A8 /* Pods */,
+				2B8F84D1B589B19C2714924A /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -135,18 +147,6 @@
 				00E356EE1AD99517003FC87E /* GoardingTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		BFB80954D8AF65CDE6D861A8 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FEA6EAD9A5CE309F8FAC120B /* Pods-Goarding.debug.xcconfig */,
-				12D69BCA1EB9535298FBAD65 /* Pods-Goarding.release.xcconfig */,
-				0DE91C4BE392969266B49D65 /* Pods-Goarding-GoardingTests.debug.xcconfig */,
-				CF82C49A25E9DF1608C6313E /* Pods-Goarding-GoardingTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,7 +429,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DE91C4BE392969266B49D65 /* Pods-Goarding-GoardingTests.debug.xcconfig */;
+			baseConfigurationReference = A20A86C18FDF9209B5219B48 /* Pods-Goarding-GoardingTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -456,7 +456,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF82C49A25E9DF1608C6313E /* Pods-Goarding-GoardingTests.release.xcconfig */;
+			baseConfigurationReference = DC3B36741EB50EA5379C0F35 /* Pods-Goarding-GoardingTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -480,7 +480,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FEA6EAD9A5CE309F8FAC120B /* Pods-Goarding.debug.xcconfig */;
+			baseConfigurationReference = 150770157557E48F33525B1D /* Pods-Goarding.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -506,7 +506,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12D69BCA1EB9535298FBAD65 /* Pods-Goarding.release.xcconfig */;
+			baseConfigurationReference = 45DF5325C3D8BB92F52DDB4F /* Pods-Goarding.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

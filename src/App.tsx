@@ -1,6 +1,7 @@
 import React, {FC} from 'react';
 import {useColorScheme} from 'react-native';
 import styled, {ThemeProvider} from 'styled-components/native';
+import {NavigationContainer} from '@react-navigation/native';
 import {DarkTheme, LightTheme} from './Theme';
 
 interface IContainerProps {
@@ -26,11 +27,13 @@ const App: FC = () => {
   const theme = isDarkMode ? DarkTheme : LightTheme;
 
   return (
-    <ThemeProvider theme={theme}>
-      <Container>
-        <MainText>Hello World</MainText>
-      </Container>
-    </ThemeProvider>
+    <NavigationContainer>
+      <ThemeProvider theme={theme}>
+        <Container>
+          <MainText>Hello World</MainText>
+        </Container>
+      </ThemeProvider>
+    </NavigationContainer>
   );
 };
 
